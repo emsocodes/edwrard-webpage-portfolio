@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edward Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1f86a05c5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="webimage/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#portfolio"> portfolio</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark"onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars"onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p> UI/UX design/Graphic Designer/ Digital Artist</p>
+        <h2>Hi, I'm Edward Aroboinosen from Nigeria</h2>
+      </div>
+    </div>
+  </div> 
+     <!---------- About ---------->
+    <div id="About">
+      <div class="container">
+        <div class="row">
+           <div class="About-col-1">
+          <img src="webimage/user.png">
+
+           </div>
+        <div class="About-col-2">
+  <h1 class="sub-title">About me</h1>
+  <p>Results-driven Web/App Developer and Graphic Designer with expertise in crafting innovative 
+    digital solutions and visually stunning designs. Proficient in web/app development, UI/UX design, 
+    and graphic design, with a passion for delivering high-quality projects that exceed client expectations.
+</p>
+
+  <div class="tab-title">
+    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+    <p class="tab-links" onclick="opentab('Education')">Education</p>
+  </div>
+  <div class="tab-contents active-tab" id="Skills">
+    <ul>
+      <li><span>Web-App Dev </span><br>react/react-native essential for web/app development  </li>
+      <li><span>Graphic Designer</span><br>Canva,Adobe Photoshop and Branding and Identity</li>
+      <li><span>Digital artist</span><br>2D Drawing and 2D animation </li>
+    </ul>
+  </div>
+  <div class="tab-contents" id="Experience">
+    <ul>
+      <li><span>Computer Teacher</span><br> treasure primary school | 2021- 2022</li>
+      <li><span>Facility Manager</span><br>JJ Enterprise | 2022-2023</li>
+      <li><span>IT Support Specialist</span><br>Traditions | 2023- 2024</li>
+    </ul>
+  </div>
+  <div class="tab-contents" id="Education">
+    <ul>
+      <li><span>NIIT</span><br>National institute of information technology</li>
+      <li><span>YAPPI</span><br>Youth In Animation And Post-Production Initative</li>
+      
+    </ul>
+  </div>
+</div>
+</div>
+  </div>
+  <!-- --------services---------- -->
+   <div id="Services">
+    <div class="container">
+       <h1 class="sub-title">My Services</h1>
+       <div class="services-list">
+         
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web-App development</h2>
+          <p>As a web and app developer, I design and build custom digital solutions that drive results. With expertise in
+             creating responsive websites and mobile apps, I help businesses and individuals establish a strong online presence, 
+             engage their audiences, and achieve their goals. From concept to launch, I'm dedicated 
+            to delivering high-quality, user-centric solutions that meet the unique needs of my clients.</p>
+            <a href="#">Learn more</a>
+         </div>
+         <div>
+          <i class="fa-solid fa-table-columns"></i>
+          <h2>Graphic Designer</h2>
+          <p>As a Graphic Designer, I specialize in creating captivating visual 
+            content that communicates your brand's message and resonates with your audience. 
+            With expertise in:<br>
+            - Logo design and branding<br>
+            - Print materials (business cards, brochures, posters)<br>
+            - Digital graphics (social media assets, email templates)<br>
+            - Visual identity development
+
+</p>
+            <a href="#">Learn more</a>
+         </div>
+         <div>
+          <i class="fa-solid fa-pencil"></i>
+          <h2>Digital artist</h2>
+          <p>"As a Digital Artist, I bring imagination to 
+            life through vibrant, high-quality artwork.
+             From concept art and illustrations to graphic
+             design and visual storytelling, I create unique 
+             digital pieces that captivate and inspire.<br>
+            - Concept art and character design<br>
+            - Illustrations and storytelling<br>
+            - Digital painting and graphic design<br>
+            - Visual development and world-building
+
+            </p>
+            <a href="#">Learn more</a>
+         </div>
+       </div>
+    </div>
+   </div>
+   <!--------portfolio---------->
+   <div id="portfolio">
+<div class="container">
+<h1 class="sub-title">My Work</h1>
+<div class="work-list">
+<div class="work">
+  <img src="webimage/work-1.jpg">
+  <div class="layer">
+    <h3>Social Media App</h3>
+    <p>The app connects you to the talented 
+      people around the world. Download it from
+      play store.
+    </p>
+    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </div>
+</div>
+<div class="work">
+  <img src="webimage/work-2.jpg">
+  <div class="layer">
+    <h3>Social Media App</h3>
+    <p>The app connects you to the talented 
+      people around the world. Download it from
+      play store.
+    </p>
+    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </div>
+</div>
+<div class="work">
+  <img src="webimage/work-3.jpg"><div class="layer">
+    <h3>Social Media App</h3>
+    <p>The app connects you to the talented 
+      people around the world. Download it from
+      play store.
+    </p>
+    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </div>
+</div>
+</div>
+<a href="gallery.html" class="btn">See More</a>
+
+   </div>
+</div>
+<!--------contact--------->
+<div id="Contact">
+<div class="container">
+   <div class="row">
+     <div class="contact-left">
+       <h1 class="sub-title ">Contact Me</h1>
+     <p><i class="fa-regular fa-paper-plane"></i>Emsowealth78@gmail.com</p>
+     <p><i class="fa-brands fa-whatsapp"></i>+(234)706 558 7307</p>
+     <div class="Social-icons">
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+       <a href=""><i class="fa-brands fa-linkedin"></i></a> 
+       
+     </div>
+     <a href="webimage/EDWARD AROBOINOSEN-CV.pdf" class="btn btn2">Download CV</a>
+      </div>
+     <div class="contact-right"></div>
+     <form name="submit-to-google-sheet">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn btn2">Submit</button>
+     </form>
+     <span id="msg"></span>
+   </div>
+   </div>  
+</div>
+<div class="copyright">
+  <p><i class="fa-solid fa-bolt"></i>copyright Edward Aroboinosen portfolio website.</p>
+</div>
+</div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents")
+
+ function opentab(tabname) {
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  for (tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbychkSomFX7ar9sdYZBN3YsdtFeuDFAbQSxE1W0CotLCgkOKS67Rn6zCDX8_pAOcQ0D3g/exec'
+  const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+         setTimeout(function(){
+            msg.innerHTML =""
+          
+         },5000)
+         form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
+
