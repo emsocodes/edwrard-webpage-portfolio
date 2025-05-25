@@ -3,28 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edward Portfolio Website</title>
+  <title>Edward Portfolio </title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/1f86a05c5b.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body margin: 0;
+    padding: 0;
+    font-family: sans-serif;>
   <div id="header">
     <div class="container">
       <nav>
-        <img src="webimage/logo.png" class="logo">
+        <img src="webimage/logo.jpg" class="logo">
         <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Services">Services</a></li>
-          <li><a href="#portfolio"> portfolio</a></li>
-          <li><a href="#Contact">Contact</a></li>
-          <i class="fa-solid fa-circle-xmark"onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-bars"onclick="openmenu()"></i>
+    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+    <li><a href="#header">Home</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Services">Services</a></li>
+    <li><a href="#portfolio"> portfolio</a></li>
+    <li><a href="#Contact">Contact</a></li>
+</ul>
+<i class="fas fa-bars" onclick="openmenu()"></i>
+
       </nav>
       <div class="header-text">
-        <p> UI/UX design/Graphic Designer/ Digital Artist</p>
-        <h2>Hi, I'm Edward Aroboinosen from Nigeria</h2>
+        <p> Software Engineer/<br>
+          Graphic Designer/ <span>Digital Artist</span></p>
+        <h2>Hi, I'm Edward <span>Aroboinosen</span>  from <br>Nigeria</h2>
       </div>
     </div>
   </div> 
@@ -33,24 +37,24 @@
       <div class="container">
         <div class="row">
            <div class="About-col-1">
-          <img src="webimage/user.png">
+          <img src="webimage/user.jpg">
 
-           </div>
+          
         <div class="About-col-2">
   <h1 class="sub-title">About me</h1>
-  <p>Results-driven Web/App Developer and Graphic Designer with expertise in crafting innovative 
+  <p>Results-driven Software Engineer and Graphic Designer with expertise in crafting innovative 
     digital solutions and visually stunning designs. Proficient in web/app development, UI/UX design, 
     and graphic design, with a passion for delivering high-quality projects that exceed client expectations.
 </p>
-
-  <div class="tab-title">
+ </div>
+         <div class="tab-title">
     <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
     <p class="tab-links" onclick="opentab('Experience')">Experience</p>
     <p class="tab-links" onclick="opentab('Education')">Education</p>
   </div>
   <div class="tab-contents active-tab" id="Skills">
     <ul>
-      <li><span>Web-App Dev </span><br>react/react-native essential for web/app development  </li>
+      <li><span>Software Engineer </span><br>react/react-native essential for web/app development  </li>
       <li><span>Graphic Designer</span><br>Canva,Adobe Photoshop and Branding and Identity</li>
       <li><span>Digital artist</span><br>2D Drawing and 2D animation </li>
     </ul>
@@ -128,37 +132,35 @@
 <div class="work">
   <img src="webimage/work-1.jpg">
   <div class="layer">
-    <h3>Social Media App</h3>
-    <p>The app connects you to the talented 
-      people around the world. Download it from
-      play store.
+   <h3>Scholarly</h3>
+    <p>scholarly is a space created for shcool faculty and students. The app reminds students and assigns them to classes. It also schedules
+       classes for the teachers, marks attendance, shows payment records etc.
     </p>
-    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <a href="https://scholarly-admin.vercel.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
 </div>
 <div class="work">
   <img src="webimage/work-2.jpg">
   <div class="layer">
-    <h3>Social Media App</h3>
-    <p>The app connects you to the talented 
-      people around the world. Download it from
-      play store.
+    <h3>Imagin Emso</h3>
+    <p>
+      still in work progress 
+
     </p>
     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
 </div>
 <div class="work">
   <img src="webimage/work-3.jpg"><div class="layer">
-    <h3>Social Media App</h3>
-    <p>The app connects you to the talented 
-      people around the world. Download it from
-      play store.
+    <h3>website </h3>
+    <p>The website
+      is null
     </p>
     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
 </div>
 </div>
-<a href="gallery.html" class="btn">See More</a>
+<a href="page2.html" class="btn">See More</a>
 
    </div>
 </div>
@@ -172,10 +174,14 @@
      <p><i class="fa-brands fa-whatsapp"></i>+(234)706 558 7307</p>
      <div class="Social-icons">
       <a href=""><i class="fa-brands fa-instagram"></i></a>
-       <a href=""><i class="fa-brands fa-linkedin"></i></a> 
+       <a href="https://www.linkedin.com/in/edward-aroboinosen-448385366/"><i class="fa-brands fa-linkedin"></i></a> 
        
      </div>
-     <a href="webimage/EDWARD AROBOINOSEN-CV.pdf" class="btn btn2">Download CV</a>
+     <div class="contact-left">
+  <a href="webimage/EDWARD AROBOINOSEN-CV.pdf" download class="btn btn2">Download CV</a>
+</div>
+
+
       </div>
      <div class="contact-right"></div>
      <form name="submit-to-google-sheet">
