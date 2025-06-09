@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edward Portfolio </title>
+  <link rel="shortcut icon" href="./webimage/favicon.ico">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/1f86a05c5b.js" crossorigin="anonymous"></script>
 </head>
@@ -184,7 +185,8 @@
 
       </div>
      <div class="contact-right"></div>
-     <form name="submit-to-google-sheet">
+     <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="c4470f17-8f1c-420c-9a64-d49a7dc53915">
       <input type="text" name="Name" placeholder="Your Name" required>
       <input type="email" name="Email" placeholder="Your Email" required>
       <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -227,23 +229,27 @@
   }
 </script>
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbychkSomFX7ar9sdYZBN3YsdtFeuDFAbQSxE1W0CotLCgkOKS67Rn6zCDX8_pAOcQ0D3g/exec'
-  const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
+  const form = document.querySelector("form");
+  const msg = document.getElementById("msg");
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent successfully"
-         setTimeout(function(){
-            msg.innerHTML =""
-          
-         },5000)
-         form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    
+    const formData = new FormData(form);
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    if (response.ok) {
+      msg.innerHTML = "Message sent successfully!";
+      form.reset();
+      setTimeout(() => msg.innerHTML = "", 5000);
+    } else {
+      msg.innerHTML = "Failed to send message. Please try again.";
+    }
+  });
+
 </script>
 </body>
 </html>
