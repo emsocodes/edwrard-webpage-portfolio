@@ -26,7 +26,8 @@ body{
 
 }
  nav .fa-circle-xmark {
-        display: none;}
+        display: none;
+      }
 nav ul .fa-circle-xmark {
     position: none;
     top: 25px;
@@ -43,6 +44,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 .logo{
