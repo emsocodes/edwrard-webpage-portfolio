@@ -312,22 +312,32 @@ transition: all 0.5s ease-in-out;
 .work:hover .layer{
   height: 100%;
 }
-.btn{
+.button-text {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: #faf2f2;
+}
+
+.btn {
   display: block;
-  margin: 50px auto;
+  margin: 20px auto;
   width: fit-content;
-  border: 1px solid rgb(145, 1, 1);
+  border: 2px solid rgb(145, 1, 1);
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  color: #767373;
-  transition: background 0.5s;
+  color: rgb(145, 1, 1); /* Text color matches border */
+  background-color: #ffffff; /* White inside */
+  transition: all 0.3s ease;
 }
-.btn:hover{
-   
-  box-shadow: 0 0 20px  rgb(145, 1, 1);
-  background-color: #f0f0f0;
+
+.btn:hover {
+  background-color: rgb(145, 1, 1); /* Red background on hover */
+  color: #ffffff; /* White text on hover */
+  box-shadow: 0 0 20px rgb(145, 1, 1);
 }
+
 
 /*-------contact-------*/
 .contact-left{
